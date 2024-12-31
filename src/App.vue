@@ -1,10 +1,14 @@
+
 <script setup>
-import { ref } from 'vue';
-import HelloWorld from "./components/HelloWorld.vue";
+// import { ref } from 'vue';
+import CompA from "@/components/CompA.vue";
+import CompB from "@/components/CompB.vue";
+
+
 // export default{
 //   setup:()=>{
-    const message ="Amin";
-    const name =ref("");
+    // const message ="Amin";
+    // const name =ref("");
 //     return{
 //       message,
 //     };
@@ -13,16 +17,20 @@ import HelloWorld from "./components/HelloWorld.vue";
 </script>
 
 <template>
-<HelloWorld/>
-  <input v-model="name" type="text">
+  <div>AApp.vue</div>
+<CompA/>
+<CompB/>
+<CompC/>
 
-  <div class="hi">hi{{ name }}</div>
+  <!-- <input v-model="name" type="text"> -->
+
+  <!-- <div class="hi">hi{{ name }}</div> -->
 </template>
 
 
 
 <style>
-.hi{
+/* .hi{
   border: solid 1px red;
-}
+} */
 </style>
